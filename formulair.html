@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulair</title>
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <center>
+        <h1 class="title">Learning Html</h1>
+    </center>
+    <div class="Top">
+        <a href="Index.html"><i class="fa-solid fa-house"></i>Home</a>
+        <a href="Html.html"><i class="fa-brands fa-html5"></i>HTML</a>
+        <a href="Css.html"><i class="fa-brands fa-css3-alt"></i>CSS</a>
+        <a href="Javasc.html"><i class="fa-brands fa-js"></i>JAVA SC </a>
+        <a href="Python.html"><i class="fa-brands fa-python"></i>PYTHON</a>
+
+        <div class="Search">
+            <form>
+                <input type="text" placeholder="Search">
+                <button type="submit"><i class="fa-solid fa-search"></i></button>
+            </form> 
+        </div>
+    </div>
+
+
+    <div class="content">
+    <form method="post" class="mainForm">
+        <h1>Inscription</h1>
+        <fieldset>
+            <legend>Creation du compte</legend>
+            <label for="Login" >Login</label>
+            <input type="text" id="Login" name="Login" placeholder="Login" required maxlength="30"><br>
+            <label for="Password">Password</label>
+            <Input type="password" id="Password" name="Password" placeholder="Password" required maxlength="30"><br> 
+            <label for="ConfirmPassword">Confirm Password</label>
+            <input type="password" id="ConfirmPassword" name="confirmPassword" placeholder="ConfirmPassword" required maxlength="30"><br>
+            <label for="Email">Email</label>
+            <input type="email" id="Email" name="Email" placeholder="Email" Required><br>
+        </fieldset>
+        <fieldset>
+            <legend>Informations générales</legend>
+            <label for="Name">Name</label>
+            <input type="text" id="Name" name="Name" ><br>
+            <label for="Surname">Surname</label>
+            <input type="text"  id="Surname" name="Surname"> <br>
+            <label for="Gender">Etat civil : </label>
+            <input type="radio" id="gender" name="Gender" value="Monsieur" checked>Monsieur
+            <input type="radio" id="gender" name="Gender" value="Madame">Madame<br>
+            <label for="adress">Adresse</label>
+            <input type="text" id="adress" name="adress" placeholder="Adresse" maxlength="30"> <br>
+        </fieldset>
+        <fieldset>
+            <legend>Formation demandées</legend>
+            <label for="Profile">Profile</label>
+            <select name="Profile" id="Profile">
+                <option value="Enseignement">Enseignement</option>
+                <option value="Etudiant" selected >Etudiant</option>
+                <option value="industriel">Industriel</option>
+            </select>
+            <br>
+            <label for="Periode">Periode Prefiere :</label>
+            <br>
+            <select multiple name="Periode" id="Periode">
+                <option value="1">Jan-Fév-Mars</option>
+                <option value="2">Avril-Mai-Juin</option>
+                <option value="3">Juillet-Août-Sept</option>
+                <option value="4">Oct-Nov-Déc</option>
+            </select>
+            <br>
+            <label for="langage">Langues de choix </label><br>
+            <input type="checkbox" id="langage" name="langage" value="Html" checked>HTML
+            <input type="checkbox" id="langage" name="langage" value="Css">CSS
+            <input type="checkbox" id="langage" name="langage" value="JavaScript">JavaScript
+            <input type="checkbox" id="langage" name="langage" value="Python">Python
+        </fieldset>
+        <input type="submit" value="Envoyer">
+        <input type="reset" value="Annuler">
+    </form>
+
+    </div> 
+
+</body>
+</html>

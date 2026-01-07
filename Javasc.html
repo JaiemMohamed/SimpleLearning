@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning JS</title>
+    <link rel="stylesheet" href="Js.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <center>
+        <h1 class="title">Learning Html</h1>
+    </center>
+    <div class="Top">
+        <a href="Index.html"><i class="fa-solid fa-house"></i>Home</a>
+        <a href="Html.html"><i class="fa-brands fa-html5"></i>HTML</a>
+        <a href="Css.html"><i class="fa-brands fa-css3-alt"></i>CSS</a>
+        <a class="active" href="Javasc.html"><i class="fa-brands fa-js"></i>JAVA SC </a>
+        <a href="Python.html"><i class="fa-brands fa-python"></i>PYTHON</a>
+
+        <div class="Search">
+            <form>
+                <input type="text" placeholder="Search">
+                <button type="submit"><i class="fa-solid fa-search"></i></button>
+            </form> 
+        </div>
+    </div>
+    <div class="SideBar">
+        <a href="#introduction">Introduction</a>
+        <a href="#Syntax">Syntax</a>
+        <a href="#Variables">Variables</a>
+        <a href="#Functions">Functions</a>
+    </div>
+
+    <div class="content">
+        <h2 id="introduction">I-Introduction</h2>
+        <h3>What can javascript do ? </h3>
+        <p>Javascript is the programming language, It can calculate, manipulate and validate Data, It can update and change both HTML and CSS </p>
+        <h3>1-JavaScript can change HTML content</h3>
+        <p>One of many Javascript HTML methods is <span class="Codes">GetelementById()</span>. The exemple below below "Finds" an HTML element (with id="demo"), and changes the element content (innerHTML) to "Hello Javascript" </p>
+        <div class="Exemples">
+            <h3>Example</h3>
+            <div contenteditable="False" class="textarea">
+                <p>document.<span class="atr">getElementById("demo")</span>.innerHTML = "Hello Javascript"</p>
+            </div>
+            <p>Javascript accept both double and single quotes</p>
+        </div>
+        <h3>2-JavaScript can change HTML attribute Values</h3>
+        <p>In this exemple we gonna change the <span class="Codes">style</span> attribute of a text </p>
+        <div class="Exemples">
+            <div contenteditable="False" class="textarea">
+                <p>document.<span class="atr">getElementById("text")</span>.style.color = "red";</p>
+            </div>
+        </div>
+        <h3>3-Where to Put Javascript</h3>
+        <h4>The script tag</h4>
+        <p>In HTML, JavaScript code is inserted between <span class="Codes">&lt;script&gt;</span> and <span class="Codes">&lt;/script&gt;</span> tags.</p>
+        <p>It can be both inserted in the head and body element of the HTML code:</p>
+        <div class="Exemples">
+            <h3>Example</h3>
+            <div contenteditable="False" class="textarea">
+                <p><span class="line">&lt;script&gt;</span></p>
+                <p style="margin-left: 10px;">document.<span class="atr">getElementById("demo")</span>.innerHTML = "Hello Javascript"</p>
+                <p><span class="line">&lt;script&gt;</span></p>
+            </div>
+        </div>
+        <h4>External JavaScript</h4>
+        <p>Scripts can also be placed in external files:</p>
+        <div class="Exemples">
+            <h3>External File : myscript.js </h3>
+            <div contenteditable="False" class="textarea">
+                <p><span class="link">function</span> myFunction()&lcub;</p>
+                <p style="margin-left: 10px;">document.<span class="atr">getElementById("demo")</span>.innerHTML = "Hello Javascript"</p>
+                <p>&rcub;</p>
+            </div>
+        </div>
+        <p>External scripts are parctical when the same code is used in many diffrent web pages. JavaScript files have file extension <strong>.js</strong></p>
+        <p>To use an external script, put the name of the script file in the <span class="Codes">&lt;script&gt;</span> tag's <span class="Codes">src</span> attribute.</p>
+        <div class="Exemples">
+            <h3>Example</h3>
+            <div contenteditable="False" class="textarea">
+                <p><span class="line">&lt;script</span> <span class="atr">src=</span> <span class="link">"myscript.js"</span><span class="line">&gt;&lt;/script&gt;</span></p>
+            </div>
+        </div>
+        <hr width="1000px" color="black">
+
+        <h2 id="Syntax">II-Syntax</h2>
+        <h3>1- JavaScript Values </h3>
+        <p>The javascript Syntax defines two types of values:</p>
+        <ul>
+            <li><strong>Literals</strong>(Fixed values)</li>
+            <li><strong>Variables</strong>(Variable values)</li>
+        </ul>
+        <h3>2- JavaScript Variables </h3>
+        <p><strong>Variables</strong> are containers for <strong>storing data values</strong></p>
+        <p>Variables must be <strong>indentified</strong> with <strong>Unique names</strong></p>
+        <div class="Exemples">
+            <h3>Example</h3>
+            <div contenteditable="False" class="textarea">
+                <p class="comment">//Define x as Variable</p>
+                <p><span class="link">let</span> x;</p>
+                <p class="comment">//Assign 5 to x</p>
+                <p>x = <span class="line">5</span>;</p>
+            </div>
+        </div>
+        <h3>3- JavaScript Identifiers</h3>
+        <p>An <strong>Identifier</strong> is the <strong>name</strong> you give to a variable. </p>
+        <p>Rules for Identifiers:</p>
+        <ul>
+            <li>Must start with a letter, underscore (_), or dollar sign ($)</li>
+            <li>Can contrain digits after the first character</li>
+            <li>Cannot be a reserved keyword (let, const, if, else, etc.)</li>
+            <li>Are case-sensitive (Lowercase isn't the same as lowercase)</li>
+        </ul>
+        <h3>4- JavaScript Operators</h3>
+        <p>JavaScript <strong>assignment Operators</strong>(=) assign values to variables:</p>
+        <div class="Exemples">
+            <h3>Example</h3>
+            <div contenteditable="False" class="textarea">
+                <p><span class="link">let</span> x = 5</p>
+                <p><span class="link">let</span> y = 6</p>
+                <p><span class="link">let</span> sum= x + y</p>
+            </div>
+        </div>
+        <p>Javascript use <strong>arithmetic operators</strong>(<span class="Codes">+</span> <span class="Codes">-</span> <span class="Codes">*</span> <span class="Codes">/</span>) to perform arithmetic operations</p>
+        <hr width="1000px" color="black">
+        <h2 id="Variables">III-Variables</h2>
+        <h3>Variables = Data Containers</h3>
+        <p>JavaScript variables are containers for data</p>
+        <p>JavaScript variables can be <strong>Declared</strong> in 4 ways: </p>
+        <ul>
+            <li>Using <span class="Codes">let</span></li>
+            <li>Using <span class="Codes">const</span></li>
+            <li>Using <span class="Codes">var </span> (not recommended)</li>
+            <li>Automatically (not recommended)</li>
+        </ul>
+        <div class="Exemples">
+            <h3>Example</h3>
+            <div contenteditable="False" class="textarea">
+                <p><span class="link"> let </span> x = 5;</p>
+                <p><span class="link"> const </span> x = 5;</p>
+                <p><span class="link"> var </span> x = 5;</p>
+                <p> x = 5;</p>
+            </div>
+        </div>
+        <h3>Data types</h3>
+        <ul>
+            <li>String: A text of characters enclosed in quotes</li>
+            <li>Number: A number representing a mathematical value</li>
+            <li>Bigint: A number representing a large integer</li>
+            <li>Boolean: A data type representing true or false</li>
+            <li>Object: A collection of key-value pairs of data</li>
+            <li>Undefined: A primitive variable with no assigned value</li>
+            <li>Null: A primitive value representing object absence</li>
+            <li>Symbol: A unique and primitive identifier</li>
+        </ul>
+        <div class="Exemples">
+            <h3>Example</h3>
+            <div contenteditable="False" class="textarea">
+                <p class="comment">//string</p>
+                <p><span class="link">Let</span> color = <span class="atr">"Yellow"</span>;</p>
+                <p><span class="link">Let</span> LastName = <span class="atr">"Jhonson"</span>;</p>
+                <p class="comment">//Number</p>
+                <p><span class="link">let</span> lenght = <span class="line">16</span>;</p>
+                <p><span class="link">let</span> weight = <span class="line">7.5</span>;</p>
+                <p class="comment">//Bigint</p>
+                <p><span class="link">let</span> x = <span class="line">123548494654864984984</span>;</p>
+                <p><span class="link">let</span> y = BigInt(<span class="line">1234564846546464</span>);</p>
+                <p class="comment">//Boolean</p>
+                <p><span class="link">let</span> x = <span class="link">True</span>;</p>
+                <p><span class="link">let</span> y = <span class="link">False</span>;</p>
+                <p class="comment">//Object</p>
+                <p> <span class="link">const</span> person = {firstName:<span class="atr">"John"</span>, lastName:<span class="atr">"Doe"</span>};</p>
+                <p class="comment">//Array Object</p>
+                <p> <span class="link">const</span> cars = [<span class="atr">"Saab"</span>,<span class="atr">"Audi"</span>,<span class="atr">"BMW"</span>]</p>
+                <p class="comment">//Date object</p>
+                <p><span class="link">const</span> date = <span class="link">new</span> Date(<span class="atr">"24-11-2025"</span>)</p>
+                <p class="comment">//Undefined</p>
+                <p><span class="link">let</span> x;</p>
+                <p><span class="link">let</span> y;</p>
+                <p class="comment">//Null</p>
+                <p> <span class="link">let</span> x = <span class="link"> null</span>;</p>
+                <p> <span class="link">let</span> y = <span class="link"> null</span>;</p>
+                <p class="comment">//Symbol</p>
+                <p><span class="link">const</span> x = symbol();</p>
+                <p><span class="link">const</span> y = symbol();</p>
+            </div>
+        </div>
+        <hr width="1000px" color="black">
+        <h2 id="Functions">IV-Functions</h2>
+        <h3>What are Functions ? </h3>
+        <p>Functions are <strong>fundamental building blocks</strong> in all programming </p>
+        <p>Functions are <strong>reusable block of code</strong> designed to perform a particular task</p>
+        <p>Functions <strong>are excuted </strong>when they are "<strong>Called</strong>" or "<strong>invoked</strong>"</p>
+        <div class="Exemples">
+            <h3>Example</h3>
+            <div contenteditable="False" class="textarea">
+                <p><span class="link">function</span> myFunction() {</p>
+                <p style="margin-left: 10px;"><span class="link">alert</span>(<span class="atr">"Hello World!"</span>);</p>
+                <p>}</p>
+            </div>
+        </div>
+        <h3>JavaScript Function Syntax</h3>
+        <div class="Exemples">
+            <div contenteditable="False" class="textarea">
+                <p><span class="link">function</span> name(p1,p2,...){</p>
+                <p class="comment" style="margin-left: 10px;">//Code to be excuted</p>
+                <p>}</p>
+            </div>
+        </div>
+        <p>Functions are defined with the <span class="Codes">Function</span> Keyword:</p>
+        <ul>
+            <li>followed by the <strong>function name</strong></li>
+            <li>followed by <strong>parentheses()</strong></li>
+            <li>followed by <strong>Brackets{}</strong></li>
+        </ul>
+        <p>The <strong>function name</strong> follows the naming rules for variables</p>
+        <p><strong>Optional parameters</strong> are listed parenteses:(p1, p2, ...)</p>
+        <p><strong>Code to be excuted</strong> is listed inside curly Brackets:{}</p>
+        <p>Functions can <strong>return an Optional value</strong> back to the caller</p>
+        <h3>Arrow Functions</h3>
+        <p>Arrow functions were introduced in ES6.</p>
+        <p>Arrow functions allow us to write shorter function syntax:</p>
+        <div class="Exemples">
+            <h3>Before Arrow :</h3>
+            <p>Function to compute the product of a and b</p>
+            <div contenteditable="False" class="textarea">
+                <p> <span class="link">let</span> myFunction = <span class="link">function</span>(a, b) {<span class="link">return</span> a * b}</p>
+            </div>    
+        </div>
+        <p></p>
+        <div class="Exemples">
+            <h3>After Arrow :</h3>
+            <div contenteditable="False" class="textarea">
+                <p><span class="link">let</span> myFunction = (a,b) => a * b;</p>
+            </div>
+        </div>
+    </div> 
+
+</body>
+</html>

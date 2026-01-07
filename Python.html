@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Python</title>
+    <link rel="stylesheet" href="Python.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <center>
+        <h1 class="title">Learning Html</h1>
+    </center>
+    <div class="Top">
+        <a href="Index.html"><i class="fa-solid fa-house"></i>Home</a>
+        <a href="Html.html"><i class="fa-brands fa-html5"></i>HTML</a>
+        <a href="Css.html"><i class="fa-brands fa-css3-alt"></i>CSS</a>
+        <a href="Javasc.html"><i class="fa-brands fa-js"></i>JAVA SC </a>
+        <a class="active" href="Python.html"><i class="fa-brands fa-python"></i>PYTHON</a>
+
+        <div class="Search">
+            <form>
+                <input type="text" placeholder="Search">
+                <button type="submit"><i class="fa-solid fa-search"></i></button>
+            </form> 
+        </div>
+    </div>
+    <div class="SideBar">
+        <a href="#intoduction">Introduction</a>
+        <a href="#Syntax">Syntax</a>
+        <a href="#Variables">Variables</a>
+        <a href="#Functions">Functions</a>
+    </div>
+
+    <div class="content">
+        <h2 id="intoduction">I-Introduction</h2>
+        <p>Python is a popular programming language. It was created by Guido van Rossum and released in 1991</p>
+        <h3>It is used for:</h3>
+        <ul>
+            <li>Web development</li>
+            <li>Software development</li>
+            <li>Mathematics</li>
+            <li>System scripting</li>
+        </ul>
+        <h3>The stuff Python can do :</h3>
+        <ul>
+            <li>Python can be used on a server to create web applications</li>
+            <li>Python can be used alongside software to create workflows</li>
+            <li>Python can be used connect to database System. It can also read and modify files</li>
+            <li>Python can be used to handle big data and perform complex mathmetics</li>
+            <li>Python can be used for rapid prototyping, or for production-ready software development</li>
+        </ul>
+        <h3>Reason to use Python :</h3>
+        <ul>
+            <li>Python works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc)</li>
+            <li>Python has a simple syntax similar to the English language</li>
+            <li>Python has syntax that allows developers to write programs with fewer lines than some other programming languages</li>
+            <li>Python runs on an interpreter system, meaning that code can be executed as soon as it is written. This means that prototyping can be very quick</li>
+            <li>Python can be treated in a procedural way, an object-oriented way or a functional way</li>
+        </ul>
+        <h3>Python Syntax compared to other programming languages</h3>
+        <ul>
+            <li>Python was designed for readability, and has some similarities to the english language with influence from mathematics</li>
+            <li>Python uses new lines to complete a command, as opposed to other programming languages which often use semicolons or parentheses</li>
+            <li>Python relies on indentation, using whitespace, to define scope; such as the scope of loops, functions and classes. Other programming languages often use curly-brackets for this purpose</li>
+        </ul>
+        <div class="Exemples">
+            <h3>Example</h3>
+            <div contenteditable="False" class="textarea">
+                <p><span class="link">print</span>(<span class="atr">"Hello, World!"</span>)</p>
+            </div>
+        </div>
+        <hr width="1000px" color="black">
+        <h2 id="Syntax">II-Syntax</h2>
+        <h3>Python Indentation</h3>
+        <p>Indentation refers to the spaces at the beginning of a code line. Where in other programming languages the identation in code is for readability only, the indentation in python is very important</p>
+        <p>Python uses indentation to indicate a block of code</p>
+        <div class="Exemples">
+            <h3>Example</h3>
+            <div contenteditable="False" class="textarea">
+                <p><span class="link">if</span> <span class="atr">5</span> <span class="link">> </span><span class="atr">2</span>:</p>
+                <p>&emsp;&emsp;<span class="link">print</span>(<span class="atr">"Five is greater than two!"</span>)</p>
+            </div>
+        </div>
+        <p>Python will give you an error if you skip the indentation:</p>
+        <div class="error">
+            <h3>Example</h3>
+            <p>Syntax Error:</p>
+            <div contenteditable="False" class="textarea">
+                <p><span class="link">if</span> <span class="atr">5</span> <span class="link">> </span><span class="atr">2</span>:</p>
+                <p><span class="link">print</span>(<span class="atr">"Five is greater than two!"</span>)</p>
+            </div>
+        </div>
+        <h3>Python Variables</h3>
+        <p>In python, variables are created when you assign a value to it:</p>
+        <div class="Exemples">
+            <h3>Example</h3>
+            <div contenteditable="False" class="textarea">
+                <p><span class="link">x</span> <span class="link">=</span> <span class="atr">5</span></p>
+                <p><span class="link">y</span> <span class="link">=</span> <span class="atr">"Hello, World!"</span></p>
+            </div>
+        </div>
+        <p>Python has no command for declaring a variable</p>
+        <hr width="1000px" color="black">
+        <h2 id="Variables">III-Variables</h2>
+        <h3>Casting</h3>
+        <p>if you want to specify the data type of a variable, this can be done with casting</p>
+        <div class="Exemples">
+            <h3>Example</h3>
+            <div contenteditable="False" class="textarea">
+                <p>x=<span class="link">str</span>(<span class="atr">3</span>)    <span class="comment"># x will be '3'</span></p>
+                <p>y=<span class="link">int</span>(<span class="atr">3</span>)    <span class="comment"># y will be 3</span></p>
+                <p>z=<span class="link">float</span>(<span class="atr">3</span>)  <span class="comment"># z will be 3.0</span></p>
+            </div>
+        </div>
+        <h3>Get the Type</h3>
+        <p>You can get the data type of a variable with the <span class="Codes">type()</span> function:</p>
+        <div class="Exemples">
+            <h3>Example</h3>
+            <div contenteditable="False" class="textarea">
+                <p>x = <span class="line">5</span></p>
+                <p>y = <span class="atr">"john"</span></p>
+                <p><span class="link">print</span>(<span class="link">type</span>(x)) </p>
+                <p><span class="link">print</span>(<span class="link">type</span>(y))</p>
+            </div>
+        </div>    
+        <h3>Variable Names</h3>
+        <p>A variable can have a short name (like x and y) or a more descriptive name (age, carname, total_volume)</p>
+        <p>Rules for python variables:</p>
+        <ul>
+            <li>A variable name must start with a letter or the underscore character</li>
+            <li>A variable name cannot start with a number</li>
+            <li>A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )</li>
+            <li>Variable names are case-sensitive (age, Age and AGE are three different variables)</li>
+            <li>A variable name cannot be any of the Python keywords.</li>
+        </ul>
+        <div class="Exemples">
+            <h3>Example</h3>
+            <p>Legal variables names:</p>
+            <div contenteditable="False" class="textarea">
+                <p>myvar= <span class="atr">"John"</span></p>
+                <p>my_var= <span class="atr">"John"</span></p>
+                <p>_my_var= <span class="atr">"John"</span></p>
+                <p>myVar= <span class="atr">"John"</span></p>
+                <p>MYVAR= <span class="atr">"John"</span></p>
+                <p>myvar2= <span class="atr">"John"</span></p>
+            </div>
+        </div>
+        <p></p>
+        <div class="error">
+            <h3>Example</h3>
+            <p>Illegal variable names:</p>
+            <div contenteditable="False" class="textarea">
+                <p>2myvar= <span class="atr">"John"</span></p>
+                <p>my-var= <span class="atr">"John"</span></p>
+                <p>my var= <span class="atr">"John"</span></p>
+            </div>
+        </div>
+        <h3>Data Types</h3>
+        <p>In programming, data type is an important concept. Variables can store data of different types, and diffrent types can do diffrent things</p>
+        <p>Python has the following data types built-in by default, in these categories:</p>
+        <ul>
+            <li>Text Type: <span class="Codes">str</span></li>
+            <li>Numeric Types <span class="Codes">int</span>,<span class="Codes">float</span>,<span class="Codes">complex</span></li>
+            <li>Sequence Types: <span class="Codes">list</span>, <span class="Codes">tuple</span>, <span class="Codes">range</span></li>
+            <li>Mapping Type: <span class="Codes">dict</span></li>
+            <li>Set Types: <span class="Codes">set</span>, <span class="Codes">frozenset</span></li>
+            <li>Boolean Type: <span class="Codes">bool</span></li>
+            <li>Binary Types: <span class="Codes">bytes</span>, <span class="Codes">bytearray</span>, <span class="Codes">memoryview</span></li>
+            <li>None Type: <span class="Codes">NoneType</span></li>
+        </ul>
+        <hr width="1000px" color="black">
+        <h2 id="Functions">IV-Functions</h2>
+        <h3>Python Functions</h3>
+        <p>A function is a block of code which only runs when it is called</p>
+        <p>A function can return data as a result</p>
+        <p>A function helps avoiding code repetition</p>
+        <h3>Creating a Function</h3>
+        <p>In Python, a function is defined using the <span class="Codes">def</span> keyword, followed by a function name and parentheses:</p>
+        <div class="Exemples">
+            <h3>Example</h3>
+            <div contenteditable="False" class="textarea">
+                <p><span class="link">def</span> my_function():</p>
+                <p>&emsp;&emsp;<span class="link">print</span>(<span class="atr">"Hello from a function"</span>)</p>
+            </div>
+        </div>
+        <p>This creates a function named <span class="Codes">my_function</span> that prints a message when called</p>
+        <h3>Calling a Function</h3>
+        <p>To call a function, write it's name followed by parentheses:</p>
+        <div class="Exemples">
+            <h3>Example</h3>
+            <div contenteditable="False" class="textarea">
+                <p><span class="link">def</span> my_function():</p>
+                <p>&emsp;&emsp;<span class="link">print</span>(<span class="atr">"Hello from a function"</span>)</p>
+                <p></p>
+                <p>my_function()</p>
+            </div>
+        </div>
+        <p>You can call the same function multiple times</p>
+        <h3>Function Names</h3>
+        <p>Function names follow the same rules as variable names in python</p>
+        <ul>
+            <li>A function name must start with a letter or the underscore character</li>
+            <li>A function name can only contain letters, numbers, and underscores</li>
+            <li>Function names are case-sensitive (<span class="Codes">myFunction</span> and <span class="Codes">myfunction</span> are different)</li>
+        </ul>
+        <div class="Exemples">
+            <h3>Example</h3>
+            <p>Valid function names:</p>
+            <div contenteditable="False" class="textarea">
+                <p>calculate_sum()</p>
+                <p>_private_function()</p>
+                <p>myFunction2()</p>
+            </div>
+        </div>
+        <h3>Return Values</h3>
+        <p>Function can send data back to the code that called them using the <span class="Codes">return</span> statement</p>
+        <p>When a function reaches a <span class="Codes">return</span> statement, the function will stop executing and send the specified value back to the caller</p>
+        <div class="Exemples">
+            <h3>Example</h3>
+            <p>A function that returns a value:</p>
+            <div contenteditable="False" class="textarea">
+                <p><span class="link">def</span> get_greeting():</p>
+                <p style="margin-left: 10px;"><span class="link">return</span> <span class="atr">"Hello, world!"</span></p>
+                <p>message = get_greeting()</p>
+                <p><span class="link">print</span>(message)</p>
+            </div>
+        </div>
+        <p>You can use the returned value directly:</p>
+        <div class="Exemples">
+            <h3>Example</h3>
+            <p>Using the return value directly:</p>
+            <div contenteditable="False" class="textarea">
+                <p><span class="link">def</span> get_greeting():</p>
+                <p style="margin-left: 10px;"><span class="link">return</span> <span class="atr">"Hello, world!"</span></p>
+                <p><span class="link">print</span>(get_greeting())</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

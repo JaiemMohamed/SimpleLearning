@@ -1,0 +1,159 @@
+body {
+  background-color: #8fbee7;
+}
+
+
+
+.title{
+    
+    font: size 200px;;
+    font-style: oblique;
+    font-family: 'Comic Sans Ms', cursive ;
+}
+
+
+.Top{
+
+    background-color: rgb(49, 120, 195);
+    overflow: hidden;
+    top:0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    height: 40%;
+    ;    
+}
+
+.Top a{
+    float: left;
+    color: #f2f2f2;;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.Top a:hover{
+    background-color: #ddd;
+    color: #000;
+}
+
+.Top a.active{
+    background-color:rgba(236, 225, 15, 0.8);
+    color: whitesmoke;
+}
+
+.Top .Search{
+    float: right;
+}
+
+.Top .Search button{
+    float: right;
+    padding:6px 10px;
+    margin-top: 8px;
+    background:#ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+.Top .Search button:hover{
+    background: #ccc;
+}
+
+.Top input[type=Text]{
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+}
+
+.SideBar{
+    position:sticky;
+    top: 170px;
+    left:10;
+    bottom: 20px;
+    width: 100px;
+    height: calc(500em -60px);
+    background-color:rgb(49, 120, 195);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding : 20px;
+    margin-top : -20px;
+    text-align: center;
+}
+
+.SideBar a{
+    float: left;
+    color: #f2f2f2;;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+.SideBar a:hover{
+    background-color: white;
+    color: black;
+}
+
+.SideBar a:active{
+    background-color: gray;
+    color: #000;
+}
+
+.content{
+    margin-top: -190px;
+    position: relative;
+    margin-left: 200px;
+    padding: 35px 20px;
+    
+
+}
+
+.Codes{
+    border: 2px;
+    background-color: rgba(128, 128, 128, 0.184);
+    color: green;
+    border-radius: 2em;
+}
+.Exemples{
+    border:3px lightgray ;
+    border-radius: 2px;
+    background-color: rgba(128, 128, 128, 0.103);
+    width:23em ;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-top: 5px;
+}
+
+.textarea{
+    width:22em ;
+    background-color: rgb(202, 227, 245);
+    border: 4px black;
+    padding-top: 5px;
+    padding-bottom: 2px;
+    padding-left: 5px;
+}
+
+.line{
+    color: maroon;
+}
+.atr{
+    color:rgb(79, 205, 7);
+}
+.link{
+    color:rgb(0, 163, 204);
+}
+.comment{
+    color: gray;
+}
+
+
+
+

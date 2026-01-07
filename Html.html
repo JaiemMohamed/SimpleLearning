@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Html</title>
+    <link rel="stylesheet" href="html.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <center>
+        <h1 class="title">Learning Html</h1>
+    </center>
+    <div class="Top">
+        <a href="Index.html"><i class="fa-solid fa-house"></i>Home</a>
+        <a class="active" href="Html.html"><i class="fa-brands fa-html5"></i>HTML</a>
+        <a href="Css.html"><i class="fa-brands fa-css3-alt"></i>CSS</a>
+        <a href="Javasc.html"><i class="fa-brands fa-js"></i>JAVA SC </a>
+        <a href="Python.html"><i class="fa-brands fa-python"></i>PYTHON</a>
+
+        <div class="Search">
+            <form>
+                <input type="text" placeholder="Search">
+                <button type="submit"><i class="fa-solid fa-search"></i></button>
+            </form> 
+        </div>
+    </div>
+    <div class="SideBar">
+        <a href="#Basic">HTML Documents</a>
+        <a href="#Heading">Headings</a>
+        <a href="#Attributs">Attributes</a>
+        <a href="#Paragraphs">Paragraphs</a>
+        <a href="#Links">Links</a>
+        <a href="#Media">Media</a>
+        <a href="#Tables">Tables</a>
+        <a href="#Lists">Lists</a>
+    </div>
+
+    <div class="content">
+        <h2 id="Basic">Ⅰ-Html documents</h2>
+        
+        <p>-All html documents must start with a document type decleration: <span class="Codes">&lt;!DOCTYPE html&gt;</span></p>
+        <p>-The Html document itself begins with a <span class="Codes">&lt;html&gt;</span> and ends with <span class="Codes">&lt;/html&gt;</span> </p>
+        <p>-All the hidden parts of the html document (The language of the page/The type of charset used/The title etc..)is between <span class="Codes">&lt;head&gt;</span> and <span class="Codes">&lt;/head&gt;</span></p>
+        <p>-The visible part of the HTML document is between <span class="Codes">&lt;body&gt;</span> and <span class="Codes">&lt;/body&gt;</span></p>
+        <div class="Exemples">
+            <h3>Example</h3>
+            <div contenteditable="False" class="textarea">
+                <p><span style="color: gray;">&lt;!DOCTYPE html&gt;</span> </p>
+                <p><span class="line">&lt;html&gt;</span></p>
+                <p style="margin-left: 20px;"><span class="line">&lt;head&gt;</span></p>
+                <p style="margin-left: 30px;"><span class="line">&lt;title&gt;</span>Name of page <span class="line">&lt;/title&gt;</span></p>
+                <p style="margin-left: 20px;"><span class="line">&lt;head&gt;</span></p>
+                <p style="margin-left:20px;"><span class="line"">&lt;body&gt;</span></p>
+                <p style="margin-left:30px;"><span class="line"">&lt;h1&gt;</span>My First Heading<span class="line">&lt;/h1&gt;</span></p>
+                <p style="margin-left: 30px;"><span class="line"">&lt;p&gt;</span> My first paragraph.<span class="line">&lt;/p&gt;</span></p>
+                <p style="margin-left: 20px;"><span class="line"">&lt;/body&gt;</span></p>
+                <p><span class="line">&lt;/html&gt;</span></p>
+            </div>
+        </div>
+        <hr width="1000px" color="black">
+
+        <h2 id="Heading">ⅠⅠ-Headings</h2>
+        <p>HTML headings are defined with the <span class="Codes">&lt;h1&gt;</span> to <span class="Codes">&lt;h6&gt;</span></p>
+        <p><span class="Codes">&lt;h1&gt;</span> defines the most important heading while <span class="Codes">&lt;h6&gt;</span> defines the least important heading</p>
+        <div class="Exemples">
+            <h3>Example</h3>
+            <div contenteditable="False" class="textarea">
+                <p><span class="line">&lt;h1&gt;</span>This is heading 1<span class="line">&lt;/h1&gt;</span></p>
+                <p><span class="line">&lt;h2&gt;</span>This is heading 2<span class="line">&lt;/h2&gt;</span></p>
+                <p><span class="line">&lt;h3&gt;</span>This is heading 3 <span class="line">&lt;/h3&gt;</span></p>
+            </div>
+        </div>
+        <hr width="1000px" color="black">
+
+        <h2 id="Attributs">ⅠⅠⅠ-Attributes</h2>
+        <ul type="circle">
+            <li>All HTML elements can have <strong>attributes</strong></li>
+            <li>Attributes provide <strong>additional information</strong>about elements</li>
+            <li>Attributes are always specified in <strong>the start tag</strong></li>
+        </ul>
+        <div class="Exemples">
+            <h3>Example</h3>
+            <div contenteditable="False" class="textarea">
+                <p><span class="line">&lt;img</span><span class="atr""> src=</span><span class="link">"img_girl.jpg"</span><span class="line""></span>&gt;</p>
+                <p><span class="line">&lt;p</span><span class="atr"> style=</span><span class="link" ;">"Color:red;"</span><span class="line">&gt;</span>This is a red paragraph<span class="line">&lt;/p&gt;</span></p>
+                <p><span class="line">&lt;img</span><span class="atr"> src=</span><span class="link"">"img_girl.jpg"</span> <span class="atr"">Width =</span><span class="link" >"500"</span> <span class="atr">length=</span><span class="link">"500"</span><span class="line">&gt;</span></p>
+            </div>
+        </div>
+        <ul type="circle">
+            <li>The <span class="Codes">Src</span> is an attribute of <span class="Codes">Img</span> specifices  the path of the image to be displayed</li>
+            <li>The <span class="Codes">Style</span> attribute is used to add styles to elements, such as color,font,size, and more</li>
+            <li>the <span class="Codes">Width</span> and <span class="Codes">Height</span> attributes of <span class="Codes">&lt;Img&gt;</span> Provide size information for images</li>
+        </ul>
+        <hr width="1000px" color="black">
+
+        <h2 id="Paragraphs">Ⅳ-Paragraphs</h2>
+        <p>Html Paragraphs are defined with the <span class="Codes">&lt;p&gt;</span>Tag:</p>
+        <div class="Exemples">
+            <h3>Example</h3>
+            <div contenteditable="False" class="textarea">
+                <p><span style="color: maroon;">&lt;p&gt;</span> This is a paragraph. <span style="color: maroon;">&lt;/p&gt;</span></p>
+                <p><span style="color: maroon;">&lt;p&gt;</span> This is another paragraph. <span style="color: maroon;">&lt;/p&gt;</span></p>
+            </div>
+        </div>
+        <hr width="1000px" color="black">
+
+        <h2 id="Links">Ⅴ-Links</h2>
+        <p>Html links are defined with the <span class="Codes">&lt;a&gt;</span> tag:</p>
+        <div class="Exemples">
+            <h3>Example</h3>
+            <div contenteditable="False" class="textarea">
+                <p><span class="line">&lt;a</span> <span class="atr">href=</span><span class="link">"https://www.youtube.com"</span><span class="line">&gt;</span>youtube <span class="line">&lt;/a&gt;</span></p>
+                <p><span class="line">&lt;a</span> <span class="atr">href=</span><span class="link">"C:\User\Documents\Work.html"</span><span class="line">&gt;</span>Link <span class="line">&lt;/a&gt;</span></p>
+                <p><span class="line">&lt;h2 <span class="atr">id=</span> <span class="link">"Hello"</span><span class="line">&gt;</span></span> Hallo<span class="line">&lt;/h2&gt;</span></p>
+                <p><span class="line">&lt;a</span> <span class="atr">href=</span><span class="link">"#Hello"</span><span class="line">&gt;</span>Go back to Hallo <span class="line">&lt;/a&gt;</span></p>
+            </div>
+        </div>
+        <p>You can get Direct links by providing the Full url of the page you want or you can use link to a page located in any folders you have or you cn also use it as an anchor (Direct link) to elements in your page  </p>
+        <hr width="1000px" color="black">
+
+        <h2 id="Media">Ⅵ-Media</h2>
+        <ol type="1">
+            <li><h3>Images:</h3></li>
+            <p>Html images are defined with the <span class="Codes"> &lt;Img&gt;</span>tag</p>
+            <p>The source file (<span class="Codes">Src</span>), alternative text (<span class="Codes">alt</span>) <span class="Codes">Width</span> and <span class="Codes">Height</span> are provided as attributes </p>
+            <div class="Exemples">
+                <h3>Example</h3>
+                <div contenteditable="False"class="textarea">
+                    <p><span class="line">&lt;img</span><span class="atr"> src=</span><span class="link"">"img_dog.jpg"</span> <span class="atr">alt=</span> <span class="link">"Picture of a dog"</span> <span class="atr"">Width =</span><span class="link" >"500"</span> <span class="atr">length=</span><span class="link">"500"</span><span class="line">&gt;</span></p>
+                </div>
+            </div>
+            <li><h3>Audio/Video:</h3></li>
+            <p>Html videos and audios are defined respectivly with the <span class="Codes">&lt;Video&gt;</span> and <span class="Codes">&lt;audio&gt;</span> Tags:</p>
+            <p>For video : The source file (<span class="Codes">&lt;Source&gt;</span>),(<span class="Codes">Controls</span> ,<span class="Codes">Width</span>,<span class="Codes">Height</span> and <span class="Codes">Autoplay</span>) are provided as attributes</p>
+            <p>For Audio : The source file (<span class="Codes">&lt;Source&gt;</span>),(<span class="Codes">Controls</span>,<span class="Codes">Muted</span>,<span class="Codes">Autoplay</span> and <span class="Codes">Loop</span>) are provided as attributes </p>
+            <div class="Exemples"> 
+                <h3>Example</h3>
+                <div contenteditable="False" class="textarea">
+                    <p><span class="line">&lt;video</span> <span class="atr">Controls</span> <span class="atr">Autoplay</span> <span class="line">&gt;</span></p>
+                    <p style="margin-left: 10px;"><span class="line">&lt;sourec</span> <span class="atr">src=</span> <span class="link">"Welcomemp.mp4"</span> <span class="atr">Type=</span><span class="link">"video/Mp4"</span><span class="line">&gt;</span></p>
+                    <p style="margin-left: 10px;"><span class="line">&lt;sourec</span> <span class="atr">src=</span> <span class="link">"Welcomemp."</span> <span class="atr">Type=</span><span class="link">"video/Ogg"</span><span class="line">&gt;</span></p>
+                    <p><span class="line">&lt;/video&gt;</span></p>
+                    <hr color="black">
+                    <p><span class="line">&lt;audio</span> <span class="atr">Controls</span> <span class="atr">Autoplay</span> <span class="line">&gt;</span></p>
+                    <p style="margin-left: 10px;"><span class="line">&lt;sourec</span> <span class="atr">src=</span> <span class="link">"Welcomemp.mp3"</span> <span class="atr">Type=</span><span class="link">"audio/Mp3"</span><span class="line">&gt;</span></p>
+                    <p style="margin-left: 10px;"><span class="line">&lt;sourec</span> <span class="atr">src=</span> <span class="link">"Welcomemp.ogg"</span> <span class="atr">Type=</span><span class="link">"audio/Ogg"</span><span class="line">&gt;</span></p>
+                    <p><span class="line">&lt;/audio&gt;</span></p>
+                </div>
+            </div>
+        </ol>
+        <hr width="1000px" color="black">
+        
+        
+        <h2 id="Tables">Ⅶ-Tables</h2>        
+        <p>HTML tables allow web developers to arrange data into rows and colomuns</p>
+        <p>A table in html consists of table cells inside rows and colomuns: </p>
+        <ul>
+            <li>To define a table it begins with <span class="Codes">&lt;table&gt;</span> and ends with <span class="Codes">&lt;/table&gt;</span> tag</li>
+            <li>Each row is defined by <span class="Codes">&lt;tr&gt;</span> and ends with <span class="Codes">&lt;/tr&gt;</span> tag</li>
+            <li>Each table cell is defined by <span class="Codes">&lt;td&lt;</span>and ends with <span class="Codes">&lt;/td&gt;</span> tag</li>
+            <li>Sometimes you want your cells to be table headers. in that case use the <span class="Codes">&lt;th&gt;</span> tag instead of the <span class="Codes">&lt;td&gt;</span>Tag</li>
+        </ul>
+        <div class="Exemples">
+            <h3>Example</h3>
+            <div contenteditable="False" class="textarea">
+                <p><span class="line">&lt;table&gt;</span></p>
+                <p style="margin-left: 10px;"><span class="line">&lt;tr&gt;</span></p>
+                <p style="margin-left: 20px;"><span class="line">&lt;th&gt;</span>Person1<span class="line">&lt;th&gt;</span></p>
+                <p style="margin-left: 20px;"><span class="line">&lt;th&gt;</span>Person2<span class="line">&lt;th&gt;</span></p>
+                <p style="margin-left: 20px;"><span class="line">&lt;th&gt;</span>Person3<span class="line">&lt;th&gt;</span></p>
+                <p style="margin-left: 10px;"><span class="line">&lt;/tr&gt;</span></p>
+                <p style="margin-left: 10px;"><span class="line">&lt;tr&gt;</span></p>
+                <p style="margin-left: 20px;"><span class="line">&lt;td&gt;</span>anas<span class="line">&lt;td&gt;</span></p>
+                <p style="margin-left: 20px;"><span class="line">&lt;td&gt;</span>Rayen<span class="line">&lt;td&gt;</span></p>
+                <p style="margin-left: 20px;"><span class="line">&lt;td&gt;</span>venus<span class="line">&lt;td&gt;</span></p>
+                <p style="margin-left: 10px;"><span class="line">&lt;/tr&gt;</span></p>
+                <p><span class="line">&lt;/table&gt;</span></p>
+            </div>
+        </div>
+        <hr width="1000px" color="black">
+
+        <h2 id="Lists">VIII-Lists</h2>
+        <ol>
+            <li><h3>Unordered html list</h3></li>
+            <p>An unordered list starts with the <span class="Codes">&lt;ul&gt;</span> tag. Each list items starts with the <span class="Codes">&lt;li&gt;</span> tag</p>
+            <p>the list items will be marked with bullets (small black circles) by default:</p>
+            <div class="Exemples">
+                <div contenteditable="False" class="textarea">
+                    <p><span class="line">&lt;ul&gt;</span></p>
+                    <p style="margin-left: 10px;"><span class="line">&lt;li&gt;</span>Coffee<span class="line">&lt;/li&gt;</span></p>
+                    <p style="margin-left: 10px;"><span class="line">&lt;li&gt;</span>Tea<span class="line">&lt;/li&gt;</span></p>
+                    <p style="margin-left: 10px;"><span class="line">&lt;li&gt;</span>Milk<span class="line">&lt;/li&gt;</span></p>
+                    <p><span class="line">&lt;/ul&gt;</span></p>
+                </div>
+            </div>
+            <li><h3>Ordered html list</h3></li>
+            <p>An ordered list starts with the <span class="Codes">&lt;ol&gt;</span> tag. Each list items starts with the <span class="Codes">&lt;li&gt;</span> tag</p>
+            <p>The list items will be marked with numbers by default:</p>
+            <div class="Exemples">
+                <div contenteditable="False" class="textarea"> 
+                    <p><span class="line">&lt;ol&gt;</span></p>
+                    <p style="margin-left: 10px;"><span class="line">&lt;li&gt;</span>Coffee<span class="line">&lt;/li&gt;</span></p>
+                    <p style="margin-left: 10px;"><span class="line">&lt;li&gt;</span>Tea<span class="line">&lt;/li&gt;</span></p>
+                    <p style="margin-left: 10px;"><span class="line">&lt;li&gt;</span>Milk<span class="line">&lt;/li&gt;</span></p>
+                    <p><span class="line">&lt;/ol&gt;</span></p>
+                </div>
+            </div>
+            <li><h3>Html Description list </h3></li>
+            <p>A Description list is a list of terms with a Description of each term</p>
+            <p>the <span class="Codes">&lt;dl&gt;</span> tag defines the Description list, the <span class="Codes">&lt;dt&gt;</span>tag defines the term (name), and the <span class="Codes">&lt;dd&gt;</span> tag describes each term</p>
+            <div class="Exemples">
+                <div contenteditable="False" class="textarea">
+                    <p><span class="line">&lt;dl&gt;</span></p>
+                    <p style="margin-left: 10px;"><span class="line">&lt;dt&gt;</span>Coffee<span class="line">&lt;/dt&gt;</span></p>
+                    <p style="margin-left: 10px;"><span class="line">&lt;dl&gt;</span>-Black hot drink<span class="line">&lt;/dl&gt;</span></p>
+                    <p style="margin-left: 10px;"><span class="line">&lt;dt&gt;</span>Milk<span class="line">&lt;/dt&gt;</span></p>
+                    <p style="margin-left: 10px;"><span class="line">&lt;dl&gt;</span>-White cold drink<span class="line">&lt;/dl&gt;</span></p>
+                    <p><span class="line">&lt;/dl&gt;</span></p>
+                </div>
+            </div>
+
+            <p>The Css <span class="Codes">list-style-type</span> property is used to define the style of list item markers :</p>
+            <table border="1px">
+                <tr><th>Unordered List </th> <th>Ordered List </th></tr>
+                <tr><td>Disc</td><td>Type="1"</td></tr>
+                <tr><td>circle</td><td>Type="A"</td></tr>
+                <tr><td>square</td><td>Type="a"</td></tr>
+                <tr><td>none</td><td>Type="I"</td></tr>
+            </table>
+        </ol>
+    </div>    
+    
+</body>
+</html>
